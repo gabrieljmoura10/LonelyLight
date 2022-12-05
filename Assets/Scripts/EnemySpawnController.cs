@@ -13,6 +13,7 @@ public class EnemySpawnController : MonoBehaviour
 
     void Start()
     {
+
         SpawnEnemy(enemy);
     }
 
