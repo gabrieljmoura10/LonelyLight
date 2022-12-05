@@ -8,19 +8,30 @@ public class EnemySpawnController : MonoBehaviour
     public float positionMaxY;
     public float positionMinY;
     private float positionY;
-
-    public GameObject enemy;
+    private int actualHorde;
+    public List<GameObject> hordes;
+    public float totalTime = 2;
+    public float timeRemaining = 2;
 
     void Start()
     {
-
-        SpawnEnemy(enemy);
+        actualHorde = 0;
+        //SpawnEnemy(enemy);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
+        else
+        {
+            timeRemaining = totalTime;
+            SpawnEnemy(hordes[actualHorde].GetComponent<Horde>().getEnemy().enemy);
+        }
+       
     }
 
     void SpawnEnemy(GameObject enemy)
