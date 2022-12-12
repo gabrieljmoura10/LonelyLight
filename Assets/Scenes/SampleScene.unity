@@ -137,10 +137,7 @@ GameObject:
   - component: {fileID: 34690101}
   - component: {fileID: 34690102}
   - component: {fileID: 34690103}
-<<<<<<< HEAD
-=======
   - component: {fileID: 34690104}
->>>>>>> 06e5005676cd324cceae3672cdf095367fad32e6
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -208,13 +205,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34690096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-<<<<<<< HEAD
   m_LocalPosition: {x: -9.002521, y: 1.04, z: 0}
   m_LocalScale: {x: 1, y: -1.11578, z: 1}
-=======
-  m_LocalPosition: {x: -8.9255, y: 0.896, z: 0}
-  m_LocalScale: {x: 1.4814, y: -1.7175201, z: 1}
->>>>>>> 06e5005676cd324cceae3672cdf095367fad32e6
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 170205313}
@@ -280,11 +272,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-<<<<<<< HEAD
-  m_Constraints: 0
-=======
   m_Constraints: 4
->>>>>>> 06e5005676cd324cceae3672cdf095367fad32e6
 --- !u!114 &34690103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,15 +280,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34690096}
-<<<<<<< HEAD
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97bc3192a0b87124dabeb719f94170ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxLife: 3
-  currencieLife: 0
-=======
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dc82ea28ceaa5144b23e21ec28a2373, type: 3}
@@ -370,7 +349,6 @@ MonoBehaviour:
   bullet: {fileID: 7687359253759684960, guid: 12ea7fcd16a577543a3ce8d21807808c, type: 3}
   firePoint: {fileID: 170205313}
   bulletSpeed: 50
->>>>>>> 06e5005676cd324cceae3672cdf095367fad32e6
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
