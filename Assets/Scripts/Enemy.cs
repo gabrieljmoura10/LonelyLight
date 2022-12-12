@@ -14,4 +14,6 @@ public class Enemy : MonoBehaviour
     {
         rb.velocity = new Vector2(-2f, 0f);
     }
+
+    
 }
