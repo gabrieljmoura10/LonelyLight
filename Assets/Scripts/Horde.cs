@@ -6,17 +6,32 @@ public class Horde : MonoBehaviour
 {
     public int enemyCount;
     public float intervalTimeSpawn;
-    public List<GameObject> enemies = new List<GameObject>();
-
-    // Start is called before the first frame update
-    void Start()
+    public GameObject boss;
+    public List<HordeEnemy> enemies = new List<HordeEnemy>();
+    
+    public HordeEnemy getEnemy()
     {
-        
-    }
+        if (enemyCount == 0)
+        {
+            return null;
+        }
+        this.enemyCount--;
+        int probabilitySpawn = Random.Range(0,100);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        for(int i =0; i < enemies.Count; i++)
+        {
+            HordeEnemy hordeEnemy = enemies[i].GetComponent<HordeEnemy>();
+            if(enemies.Count == 1)
+            {
+                return hordeEnemy;
+            }
+
+            if (hordeEnemy.IsSpawnEnemy(probabilitySpawn))
+            {
+                return hordeEnemy;
+            }
+        }
+        return null;
+       
     }
 }
