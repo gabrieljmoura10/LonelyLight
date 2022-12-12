@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 34690101}
   - component: {fileID: 34690102}
   - component: {fileID: 34690103}
+  - component: {fileID: 34690104}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -279,14 +280,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34690096}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dc82ea28ceaa5144b23e21ec28a2373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  firePoint: {fileID: 0}
+  bullet: {fileID: 7687359253759684960, guid: 12ea7fcd16a577543a3ce8d21807808c, type: 3}
+  firePoint: {fileID: 170205313}
   bulletSpeed: 50
+--- !u!114 &34690104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34690096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f497d56746bd1d4eb04926ecd7d4512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontaArma: {fileID: 170205313}
+  disc: {fileID: 7687359253759684960, guid: 12ea7fcd16a577543a3ce8d21807808c, type: 3}
 --- !u!1 &170205312
 GameObject:
   m_ObjectHideFlags: 0
