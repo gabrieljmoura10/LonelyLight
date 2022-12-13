@@ -20,6 +20,7 @@ public class EnemyDamage : MonoBehaviour
         if(other.gameObject.CompareTag("Player")){
             other.gameObject.GetComponent<LifeCharacter>().Damage();
         }
+        
 
     }
 }
