@@ -76,8 +76,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8750998665893016795, guid: a68a2b39e4fff2143ae002b019b21703, type: 3}
+      propertyPath: maxLife
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750998665893016795, guid: a68a2b39e4fff2143ae002b019b21703, type: 3}
       propertyPath: velocity
       value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8750998665893016795, guid: a68a2b39e4fff2143ae002b019b21703, type: 3}
+      propertyPath: currencieLife
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8750998665893016797, guid: a68a2b39e4fff2143ae002b019b21703, type: 3}
       propertyPath: m_Name

@@ -27,6 +27,16 @@ public class Enemy : MonoBehaviour
 
         if(currencieLife <= 0){
             Destroy(gameObject);
+            //futuramente adicionar xp ao usuario
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            Destroy(other.gameObject); //destroi a bala que batter no inimigo
+            Damage();
         }
     }
 }

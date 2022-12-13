@@ -1,13 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour
 {
-
+    public int maxLife;
+    public int currencieLife;
     public Vector2 speed = new Vector2(50, 50);
 
-    // Update is called once per frame
+    void Start()
+    {
+        currencieLife = maxLife;
+    }
+
     void Update()
     {
         float inputX = Input.GetAxis("Horizontal");
@@ -18,5 +22,27 @@ public class Character : MonoBehaviour
         movement *= Time.deltaTime;
 
         transform.Translate(movement);
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            var magnitude = 1000;
+            var force = transform.position - other.transform.position;
+            force.Normalize();
+            this.gameObject.GetComponent<Rigidbody2D>().AddForce(force * magnitude);
+            Damage();
+        }
+    }
+
+    public void Damage()
+    {
+        currencieLife--;
+
+        if (currencieLife <= 0)
+        {
+            SceneManager.LoadScene("EndGameScene");
+        }
     }
 }
