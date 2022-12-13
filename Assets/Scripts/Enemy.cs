@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public float velocity = -2f;
 
     private void Awake()
     {
@@ -12,7 +13,7 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
-        rb.velocity = new Vector2(-2f, 0f);
+        rb.velocity = new Vector2(velocity, 0f);
     }
 
     
