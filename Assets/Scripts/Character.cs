@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour
 {
+    
     public int maxLife;
     public int currencieLife;
     public Vector2 speed = new Vector2(50, 50);
@@ -11,7 +12,7 @@ public class Character : MonoBehaviour
     {
         currencieLife = maxLife;
     }
-
+    
     void Update()
     {
         float inputX = Input.GetAxis("Horizontal");
